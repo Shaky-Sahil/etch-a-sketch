@@ -1,0 +1,60 @@
+*{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+:root{
+    --grid-size:16;
+    --color-change:black;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    text-align: center;
+    margin-top: auto;
+    background-color: #E6AF2E;
+    width:150px;
+    margin:auto;
+    box-shadow: 10px 10px 4px seashell;
+    border-style: solid;
+    margin-bottom: 8px;
+    border-radius: 0.75px;
+}
+.grid-container{
+    background-color: white;
+    margin:auto;
+    width:35rem;
+    height:35rem;
+    border-style: solid;
+    grid-template-columns: repeat(var(--grid-size),auto);
+    grid-template-rows: repeat(var(--grid-size),auto);
+}
+
+.btn-container{
+    margin:auto;
+    margin-top: 1.25em;
+    display:grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-template-rows: 3fr,3fr;
+    place-items: center;
+    width: 500px;
+    grid-row-gap: 5px;
+    /*background-color: goldenrod;*/
+}
+.pixel{
+    border-style: solid;
+    border-width: 1px;
+}
+
+.change-background{
+    background-color: var(--color-change);
+}
+#sizerange{
+    grid-area: slider;
+}
+.heading{
+    background-color: ghostwhite;
+}
+.btn{
+    background-color: goldenrod;
+
+}
